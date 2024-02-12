@@ -7,11 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" class="login-signup">
+    <form action="" class="loginSignup">
         <h1>Log-in</h1>
-        <input type="text" name="userName-email" placeholder="User name/E-mail">
-        <input type="password" name="password" id="password" placeholder="Password">
-        <input type="submit" value="Entrar">
+        <section class="userCredential">
+            <input type="text" name="userName-email" placeholder="User name / E-mail">
+            <input type="password" name="password" id="password" placeholder="Password">
+        </section>
+        <section class="userCredential">
+            <input type="submit" value="Enter" id="send">
+        </section>
+        <section class="keepSigned">
+            <input type="checkbox" name="keepSigned" id="keepSigned"> 
+            <p>Keep me signed in</p>
+        </section>
         <p>Don't have an account? <a href="">Sign Up</a></p>
     </form>
 </body>

@@ -1,11 +1,60 @@
+@font-face {
+    font-family: 'ProtestRiot-Regular';
+    src: url(../assets/ProtestRiot-Regular.ttf) format('truetype');
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.login-signup {
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ProtestRiot-Regular', sans-serif;
+}
+
+.loginSignup {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    gap: 20px;
+    align-items: center;
+}
+
+.userCredential {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 5px;
+}
+
+.userCredential input {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, .1);
+}
+
+#send {
+    background-color: rgba(30, 168, 223, .8);
+}
+
+#send:hover {
+    cursor: pointer;
+    background-color: rgb(30, 168, 223);
+}
+
+.keepSigned {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 15px;
+    width: 100%;
+} 
+
+input {
+    font-family: 'ProtestRiot-Regular', sans-serif
 }
