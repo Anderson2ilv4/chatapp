@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "aside main main";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+    background-color: blue;
+}
+
+.user {
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.chats {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
