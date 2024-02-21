@@ -15,7 +15,6 @@ body {
 
 aside {
     grid-area: aside;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,9 +29,31 @@ main {
 }
 
 .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 80px;
     border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+#profile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#userName {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+#quit {
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
 }
 
@@ -41,4 +62,23 @@ main {
     height: 100%;
     border-radius: 5px;
     border: 1px solid black;
+    padding: 5px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.messageTag {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
 }
