@@ -10,9 +10,9 @@
     <form action="" class="loginSignup">
         <h1>Log-in</h1>
         <section class="userCredential">
-            <input type="text" name="userName-email" placeholder="User name / E-mail">
-            <input type="password" name="password" id="password" placeholder="Password">
-            <input type="submit" value="Enter" id="send">
+            <input type="text" name="userNameEmail" placeholder="User name / E-mail" id="userNameEmail">
+            <input type="password" name="password" id="password" placeholder="Password" itemid="password">
+            <input type="submit" value="Enter" id="send" onclick="alerta()">
         </section>
         <section class="options">
             <input type="checkbox" name="keepSigned" id="keepSigned" style="cursor: pointer;"> 
@@ -21,5 +21,7 @@
         <a href="./forgotPassword.html" font-size: 10pt;">Forgot password</a>
         <p>Don't have an account? <a href="./signup.html">Sign Up</a></p>
     </form>
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>
